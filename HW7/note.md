@@ -6,6 +6,7 @@ Prop drilling is the process of passing props through multiple component layers 
 
 3. How are we going to render a variable as a React component?
 You can assign a component to a variable and render it using JSX syntax. React treats the variable as a component as long as it starts with a capital letter.
+
 4. What is HOC and why do we need it?
 A Higher-Order Component (HOC) is a function that takes a component and returns a new component with added behavior. It’s used to reuse component logic, though hooks are now the preferred approach.
 
@@ -23,6 +24,7 @@ useState is a hook for managing local component state. The initial value should 
 
 9. What is the hook useEffect and why do we need it?
 useEffect is used to handle side effects like data fetching, subscriptions, or DOM updates. It runs after render and helps separate side-effect logic from rendering logic.
+
 10. What is the dependency array in useEffect?
 The dependency array controls when the effect runs. The effect re-runs whenever one of the listed dependencies changes.
 
@@ -31,6 +33,7 @@ useEffect with dependencies acts as the equivalent of componentDidUpdate. It run
 
 12. What is the lifecycle method componentDidMount equivalent hook?
 useEffect with an empty dependency array ([]) is equivalent to componentDidMount. It runs once after the component is first rendered.
+
 13. What is the lifecycle method componentWillUnmount equivalent hook?
 A cleanup function returned from useEffect is equivalent to componentWillUnmount. It runs just before the component is removed from the DOM.
 
